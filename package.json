@@ -1,21 +1,26 @@
 {
-  "name": "crud-app-auth",
+  "name": "hahn-qa-assessment",
   "version": "1.0.0",
-  "engines": {
-    "node": "14.15.0"
-  },
-  "description": "Fullstack Crud application with login system and email verification",
+  "description": "QA Tester Pre-Interview Technical Assessment - Complete testing solution for Crud-app-Auth",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "nodemon index",
-    "heroku-postbuild": "cd client && npm install && npm run build",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "test:e2e:headed": "playwright test --headed"
+    "test:e2e:headed": "playwright test --headed",
+    "test:smoke": "playwright test tests/e2e/smoke.spec.js --headed"
   },
-  "author": "James oyanna",
-  "license": "ISC",
+  "keywords": [
+    "qa",
+    "testing",
+    "playwright",
+    "automation",
+    "crud-app",
+    "assessment"
+  ],
+  "author": "REDWANE-AIT-OUKAZZAMANE",
+  "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
